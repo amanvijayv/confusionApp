@@ -2,8 +2,8 @@
 
 angular.module('confusionApp')
         .factory('menuFactory', function() {
-var menufac = {};
-    var dishes=[
+			var menufac = {};
+			var dishes=[
                          {
                           name:'Uthapizza',
                           image: 'images/uthapizza.png',
@@ -162,11 +162,11 @@ var menufac = {};
                                }                                                          ]
                         }
                         ];
-    menufac.getDishes = function() {
-        return dishes;
-    };
-    menufac.getDish = function(index) {
-        return dishes[index];
-    };
-    return menufac;
+			menufac.getDishes = function() {
+				return dishes;
+			};
+			menufac.getDish = function(index) {
+				return dishes[index];
+			};
+			return menufac;
         });
